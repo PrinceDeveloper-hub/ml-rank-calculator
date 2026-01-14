@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mobile Legends Rank Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Mobile Legends Rank Calculator</h1>
+    <p class="subtitle">
+      Calculate how many matches you need to reach your target rank.
+    </p>
+
+    <div class="card">
+
+      <label>Current Rank</label>
+      <select id="currentRank">
+        <option value="0">Warrior</option>
+        <option value="20">Elite</option>
+        <option value="40">Master</option>
+        <option value="80">Grandmaster</option>
+        <option value="120">Epic</option>
+        <option value="160">Legend</option>
+        <option value="200">Mythic</option>
+      </select>
+
+      <label>Target Rank</label>
+      <select id="targetRank">
+        <option value="20">Elite</option>
+        <option value="40">Master</option>
+        <option value="80">Grandmaster</option>
+        <option value="120">Epic</option>
+        <option value="160">Legend</option>
+        <option value="200">Mythic</option>
+      </select>
+
+      <label>Win Rate (%)</label>
+      <input type="number" id="winRate" placeholder="e.g. 55">
+
+      <button onclick="calculate()">Calculate</button>
+
+      <div id="result"></div>
+
+      <!-- SEO & Trust Content -->
+      <div class="info">
+        <h2>About This Tool</h2>
+        <p>
+          The Mobile Legends Rank Calculator helps players estimate how many
+          matches they need to reach a higher rank based on their current rank
+          and win rate. This tool is designed to help players plan their ranked
+          grind more efficiently.
+        </p>
+
+        <h2>How the Calculation Works</h2>
+        <p>
+          The calculator compares your current rank and target rank, then uses
+          your win rate to estimate the total matches required. The result is an
+          approximation and actual progress may vary depending on gameplay and
+          matchmaking.
+        </p>
+
+        <h2>Tips to Rank Up Faster</h2>
+        <ul>
+          <li>Play duo or squad matches for better coordination</li>
+          <li>Avoid tilt and take breaks after losses</li>
+          <li>Focus on mastering 2–3 heroes</li>
+          <li>Play during off-peak hours</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
